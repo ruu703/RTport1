@@ -1,0 +1,18 @@
+.p-btnwrap{
+    overflow: hidden;
+    &--s{
+        padding: 10px 0;
+    }
+    &--m{
+        padding: 30px 0;
+        @include sm(){
+            padding: 20px 0;
+          }
+          @include md(){
+            padding: 20px 0;
+          }
+    }
+    &__right{
+        float: right;
+    }
+}

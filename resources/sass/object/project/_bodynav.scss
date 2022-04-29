@@ -1,0 +1,41 @@
+.p-body-nav {
+	background: #fff;
+	border-bottom:  1px solid #dadada;
+	border-top: 1px solid #dadada;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.9;
+    &.m_fixed {
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+    @include sm(){
+        display: none;
+        &.m_fixed {
+            display: none;
+        }
+      }
+      @include md(){
+        display: none;
+        &.m_fixed {
+            display: none;
+        }
+      }
+      @include lg(){
+        display: none;
+        &.m_fixed {
+            display: none;
+        }
+      }
+      &__ul{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__li{
+        padding: 10px;
+      }
+}

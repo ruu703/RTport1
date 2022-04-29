@@ -1,0 +1,15 @@
+.u-margin{
+    &--l{
+        margin: 50px 0;
+    }
+    &-bottom{
+        &--20{
+            margin-bottom: $space-size-s;
+        }
+    }
+    &-negative{
+        &--5{
+            margin-bottom: -5px;
+        }
+    }
+}

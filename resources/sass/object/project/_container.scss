@@ -1,0 +1,534 @@
+.p-container{
+    width: 100%;
+    &:last-child{
+      padding-bottom: $space-size-2l;
+      @include sm(){
+        padding-bottom: $space-size-s;
+    }
+      @include md(){
+        padding-bottom: $space-size-s;
+    }
+    }
+    &--gray{
+        background-color: $color-bgcol;
+    }
+    &__top{
+        // background: url(images/11464_color.png) no-repeat 0 50%/200px;
+        background: url(https://ruka.sakura.ne.jp/match/images/11464_color.png) no-repeat 0 50%/200px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        height: calc(100vh - 80px);
+        padding: 50px 0;
+        @include sm(){
+          width: 80%;
+          background: url(https://ruka.sakura.ne.jp/match/images/11464_color.png) no-repeat 0 85%/120px;
+          height: calc(100vh - 60px);
+          align-items: flex-start;
+          padding: 30px 0;
+        }
+        @include md(){
+          width: 70%;
+          background: url(https://ruka.sakura.ne.jp/match/images/11464_color.png) no-repeat 0 90%/150px;
+          height: calc(100vh - 60px);
+          align-items: flex-start;
+          padding: 30px 0;
+        }
+        @include lg(){
+          background: url(https://ruka.sakura.ne.jp/match/images/11464_color.png) no-repeat 0 90%/150px;
+          height: calc(100vh - 60px);
+          align-items: flex-start;
+          padding: 40px 0;
+        }
+        @include xl(){
+          width: 85%;
+        }
+    }
+    &__wrap{
+          padding: 30px 0;
+          width: 70%;
+          margin-right: auto;
+          margin-left: auto;
+          @include sm(){
+            padding: 20px 0;
+            width: 90%;
+          }
+          @include md(){
+            padding: 20px 0;
+            width: 90%;
+          }
+          @include lg(){
+            // padding: 30px 0;
+            width: 80%;
+          }
+          @include xl(){
+            padding: $space-size-m 0;
+          }
+        &-registerd{
+          display: flex;
+          justify-content: center;
+          color: $color-bgcol;
+        }
+    }
+      &__button{
+        text-align: center;
+        padding: $space-size-m 0;
+        &--red{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        letter-spacing: 0.1em;
+        color: #fff;
+        border-radius: 0.5rem;
+        padding:calc(1.2rem - 12px) 3rem 1.2rem;
+        background: $color-registerbtn;
+        &:before {
+          position: absolute;
+          top: -6px;
+          left: -6px;
+          width: 100%;
+          height: 100%;
+          content: "";
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          border: 2px solid $color-btn;
+          border-radius: 0.5rem;
+        }
+        &:hover {
+          padding: calc(1.2rem - 6px) 3rem;
+        }
+        &:hover:before {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    &__info{
+        text-align: center;
+    }
+    &__listwrap{
+      display: flex;
+      margin-right: -15px;
+      flex-wrap: wrap;
+      @include sm(){
+        display: inherit;
+    }
+    @include md(){
+        display: inherit;
+    }
+    @include lg(){
+        display: inherit;
+    }
+  }
+  &__doubleinput{
+    display: flex;
+    flex-direction: row;
+    @include sm(){
+      flex-direction: column;
+    }
+    @include md(){
+      flex-direction: column;
+    }
+    &-span{
+      padding: 0 15px;
+      line-height: 50px;
+      @include sm(){
+        padding: 0 5px;
+      }
+      @include md(){
+        padding: 0 5px;
+      }
+    }
+  }
+  &__doubleinput-rps{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+    @include sm(){
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+    }
+    @include md(){
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+  &__check{
+    padding: 20px 0;
+  }
+  &__underline{
+    text-decoration: revert;
+  }
+  &__search{
+    position: relative;
+    &::before{
+      content: "";           /* 疑似要素に必須 */
+      width: 16px;           /* アイコンの横幅 */
+      height: 16px;          /* アイコンの高さ */
+      // background: url(./images/search.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+      background: url(https://ruka.sakura.ne.jp/match/images/search.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+      opacity: 0.6;
+      display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+      position: absolute;    /* 相対位置に指定 */
+      top: 16px;              /* アイコンの位置。微調整してね */
+      left: 16px;             /* アイコンの位置。微調整してね */
+    }
+    & input {
+      padding: 3px 0 3px 3em; /* アイコンを設置するため左の余白を多めに指定*/
+    }
+  }
+  &__body{
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
+      @include sm(){
+        margin-bottom: 10px;
+        display: block;
+      }
+      @include md(){
+        margin-bottom: 10px;
+        display: block;
+      }
+  }
+  &__posted{
+    text-align: center;
+  }
+  &--subnav{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+  &__twitter{
+    background-color: #1d9bf0;
+    color: #fff;
+    border: inherit;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 26px;
+    margin: inherit;
+    cursor: pointer;
+    height: 28px;
+    border-radius: 14px;
+    padding: 1px 12px 1px 12px;
+    &:hover{
+        background-color: #0c7abf;
+    }
+  }
+  &__i{
+    color: #fff;font-size: 16px;
+    display: inline-block;
+    font-size: 16px;
+  }
+  &__submit{
+    color: #fff;
+    border: inherit;
+    display: inline-block;
+    width: 50%;
+    font-size: $font-size-m;
+    &:disabled{
+      background: gray;
+      &:hover{
+        color: #fff;
+        outline: inherit;
+        cursor: not-allowed;
+        background: $color-border;
+      }
+  }
+    @include sm(){
+      width: 100%;
+      font-size: $font-size-s;
+    }
+    @include md(){
+      width: 100%;
+    }
+    @include lg(){
+      width: 100%;
+    }
+    @include xl(){
+      width: 100%;
+    }
+    &--red{
+      background-color: #EE0000;
+    }
+    &--black{
+      font-size: $font-size-s;
+      background-color: #000;
+    }
+  }
+  &__decision{
+    background-color: $color-decisionbtn;
+    color: #fff;
+    border: inherit;
+    font-size: $font-size-s;
+    width: 60%;
+    @include sm(){
+      width: 100%;
+      font-size: 14px;
+    }
+    @include md(){
+      width: 100%;
+    }
+    @include lg(){
+      width: 100%;
+    }
+    @include xl(){
+      width: 100%;
+    }
+    &:hover{
+      background: inherit;
+      outline: inherit;
+      color: inherit;
+      outline: 1px solid $color-btn;
+      outline-offset: -1px;
+      cursor: pointer;
+  }
+}
+  &__list{
+    list-style: none;
+    padding: 0;
+  }
+  &__panel{
+    transition: all 0.6s ease 0s;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid $color-border;
+    line-height: 2;
+    &--small{
+        width: calc(33.3% - 15px);
+        margin: 0 15px 15px 0;
+        line-height: inherit;
+        @include sm(){
+            width: inherit;
+        }
+        @include md(){
+            width: inherit;
+        }
+        @include lg(){
+            width: inherit;
+        }
+        @include xl(){
+            width: calc(50% - 15px);
+        }
+        &:hover{
+            transform: scale(1.05, 1.05);
+        }
+    }
+    &--scale{
+        &:hover{
+            transform: scale(1.02, 1.02);
+        }
+    }
+  }
+  &__inner{
+    padding: $space-size-s;
+    padding-top: $space-size-m;
+    color: $color-text;
+    margin-right: auto;
+    margin-left: auto;
+    &--large{
+      padding: 40px 0;
+      width: 70%;
+      @include sm(){
+          padding: 10px 0;
+          width: 90%;
+      }
+      @include md(){
+          padding: 10px 0;
+          width: 90%;
+      }
+      @include lg(){
+          padding: 10px 0;
+          width: 90%;
+      }
+      @include xl(){
+          padding: 20px 0;
+          width: 90%;
+      }
+  }
+  &--middle{
+    padding: $space-size-m;
+  }
+    &-list{
+      line-height: 1.8em;
+      font-size: 14px;
+      background: #f6f5f3;
+      border: 1px solid #dadada;
+      padding: 5px $space-size-xs;
+      border-radius: 10px;
+      margin-bottom: $space-size-xs;
+      position: relative;
+      @include sm(){
+          line-height: 1.6;
+      }
+      @include md(){
+          line-height: 1.6;
+      }
+      &:hover{
+          background: #fff; 
+      }
+    }
+    &--project{
+      padding: 80px 0 60px 0;
+      width: 80%;
+      @include sm(){
+          padding: 60px 0 30px 0;
+          width: 90%;
+      }
+      @include md(){
+          padding: 60px 0 30px 0;
+          width: 90%;
+      }
+      @include lg(){
+          padding: 60px 0 30px 0;
+          width: 90%;
+      }
+      @include xl(){
+          padding: 60px 0 30px 0;
+          width: 90%;
+      }
+  }
+  &--projectmsg{
+      padding: 30px 0;
+      width: 90%;
+      @include sm(){
+          padding: 20px 0;
+      }
+      @include md(){
+          padding: 20px 0;
+      }
+      @include lg(){
+          padding-top: $space-size-s;
+          padding-bottom: $space-size-xs;
+      }
+    }
+  }
+  &__reward{
+    font-size: $font-size-m;
+    color: $color-reward;
+    font-weight: bold;
+    &--large{
+        font-size: $font-size-l;
+    }
+  }
+  &__tag{
+    position: absolute;
+    left: 0;
+    top: $space-size-xs;
+    background-color: $color-border;
+    padding: 0 $space-size-xs;
+    border-radius: 0 10px 10px 0;
+    color: $color-text;
+    font-size: 14px;
+    &--large{
+        top: $space-size-s;
+        font-size: inherit;
+        border-radius: 0 15px 15px 0;
+        padding: 3px $space-size-s;
+        @include sm(){
+          font-size: $font-size-s;
+        }
+        @include md(){
+          font-size: $font-size-s;
+        }
+      }
+  }
+  &__tagwrap{
+    align-items: center;
+  }
+  &__type{
+    font-size: $font-size-m;
+  }
+  &__article{
+    margin: $space-size-s 0; 
+    @include lg(){
+        margin: $space-size-s 0;
+      }
+  }
+  &__btnwrap{
+    text-align: center;
+    padding: $space-size-s 0;
+    &--right{
+      text-align: inherit;
+      display: flex;
+      justify-content: flex-end;
+      }
+      @include sm(){
+        padding: $space-size-xs 0;
+      }
+      @include md(){
+        padding: $space-size-xs 0;
+      }
+    }
+    &__hr{
+      border-width: 1px 0px 0px 0px; 
+      border-style: solid; 
+      border-color: $color-border;   
+      height: 1px;
+      margin: $space-size-m 0;       
+  }
+  &__editbtn{
+    background-color: $color-btn;
+    color: #fff;
+    font-size: $font-size-s;
+    padding: 3px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    @include sm(){
+      // font-size: 14px;
+      bottom: inherit;
+      right: inherit;
+      display: block;
+      position: inherit;
+      margin: 5px;
+    }
+    @include md(){
+      // font-size: 14px;
+      bottom: inherit;
+      right: inherit;
+      display: block;
+      position: inherit;
+      margin: 5px;
+    }
+    // @include lg(){
+    //   width: 100%;
+    // }
+    // @include xl(){
+    //   width: 100%;
+    // }
+    &:hover{
+      background: inherit;
+      outline: inherit;
+      color: inherit;
+      outline: 1px solid $color-btn;
+      outline-offset: -1px;
+      cursor: pointer;
+    }
+  }
+  &__circle{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius:10px;
+    position:relative;top:7px;
+    z-index: 1;
+  }
+}

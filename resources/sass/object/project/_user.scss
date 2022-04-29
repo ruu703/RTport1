@@ -1,0 +1,207 @@
+.p-user{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+      @include sm(){
+        padding: 5px 0;
+      }
+      @include md(){
+        padding: 5px 0;
+      }
+    &--right{
+    flex-direction: row-reverse;
+    }
+    &--profile{
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+    &--profedit{
+      width: 60%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &__radio{
+      flex-grow: 3;display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &__name{
+      margin: 0 $space-size-xs;
+      display: flex;
+      align-items: center;
+      &--large{
+        margin: 0 $space-size-m;
+        @include sm(){
+          margin: 0 10px;
+        }
+        @include md(){
+          margin: 0 10px;
+        }
+      }
+      &--profile{
+        padding: $space-size-s 0;
+        @include sm(){
+          padding: $space-size-xs 0;
+        }
+        @include md(){
+          padding: $space-size-xs 0;
+        }
+      }
+    }
+    &__nickname{
+      font-weight: bold;
+      @include sm(){
+       font-size: 14px;
+       line-height: 1.5;
+      }
+      @include md(){
+       font-size: 14px;
+       line-height: 1.5;
+      }
+    }
+    &__wrap{
+        width: 100%;
+        margin: 0 $space-size-xs;
+        &--directmessage{
+          width: 70%;
+          @include sm(){
+            width: inherit;
+          }
+          @include md(){
+            width: inherit;
+          }
+        }
+    }
+    &__profile{
+      line-height: inherit;
+      position: relative;
+      top: -5px;
+      align-items: center;
+      &--right{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+       }
+    }
+    &__img{
+      display: flex;
+    justify-content: center;
+        &--message{
+          width: 50px;
+          @include sm(){
+            width: 40px;
+          }
+          @include md(){
+            width: 40px;
+          }
+        }
+    }
+    &__message{
+        background-color: $color-bgcol;
+        border: 1px solid $color-border;
+        border-radius: 10px;
+        padding: $space-size-xs;
+        @include sm(){
+          line-height: 1.4;
+          font-size: 14;
+          padding: 6px;
+        }
+        @include md(){
+          line-height: 1.4;
+          font-size: 14;
+          padding: 6px;
+        }
+        @include lg(){
+          line-height: 1.4;
+          font-size: 14;
+          padding: 8px;
+        }
+    }
+    &__intoduce{
+      padding: 20px 0;
+      @include sm(){
+        line-height: 1.6;
+        font-size: 14px;
+      }
+      @include md(){
+        line-height: 1.6;
+        font-size: 14px;
+      }
+      @include lg(){
+        line-height: 1.8;
+      }
+    }
+   &__time{
+    font-size: 8px;
+    color: gray;
+    float: right;
+    &--right{
+      float: right;
+    }
+    &--left{
+      float: left;
+    }
+   }
+   &__avator{
+    object-fit: cover;
+    border-radius: 100px;
+    border: 1px solid $color-border;
+    &--message{
+      width: 50px;
+      height: 50px;
+      @include sm(){
+        width: 40px;
+        height: 40px;
+      }
+      @include md(){
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &--edit{
+      width: 200px;
+      height: 200px;
+      @include sm(){
+        width: 100px;
+        height: 100px;
+      }
+      @include md(){
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &--nomal{
+        width: 100px;
+        height: 100px;
+        @include sm(){
+          width: 60px;
+          height: 60px;
+        }
+        @include md(){
+          width: 60px;
+          height: 60px;
+        }
+    }
+    &--applyuser{
+      @extend .p-user__avator--message;
+      @include sm(){
+        width: 35px;
+        height: 35px;
+      }
+      @include md(){
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+  &--applicant{
+    margin-top: 5px;
+    background: #f6f5f3;
+    border: 1px solid #dadada;
+    padding: 10px 20px;
+    }
+  }
+  

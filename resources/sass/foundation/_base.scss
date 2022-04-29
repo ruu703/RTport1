@@ -1,0 +1,32 @@
+/* base */
+
+html,body {
+    font-family: $font;
+    letter-spacing:0.8pt;
+}
+a {
+    text-decoration: none;
+    color: $color-text;
+}
+h1 {
+    @include sm(){
+        font-size: 1.3em;
+    }
+    @include md(){
+        font-size: 1.5em;
+    }
+    @include lg(){
+        font-size: 1.5em;
+    }
+}
+h2 {
+    @include sm(){
+        font-size: 1.3em;
+    }
+    @include md(){
+        font-size: 1.3em;
+    }
+    @include lg(){
+        font-size: 1.3em;
+    }
+}

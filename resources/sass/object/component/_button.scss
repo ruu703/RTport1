@@ -1,0 +1,36 @@
+.c-btn{
+    border-radius: 0.5rem;
+    padding: $space-size-xs $space-size-m;
+    font-weight: bold;
+    letter-spacing: 0.8pt;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    @include sm(){
+        padding: 5px $space-size-s;
+      }
+    @include md(){
+        padding: 5px $space-size-s;
+    }
+    @include lg(){
+        padding: $space-size-xs $space-size-s;
+    }
+    @include xl(){
+        padding: 15 $space-size-m;
+    }
+    &--modal{
+        padding: $space-size-xs $space-size-s;
+        background-color: $color-border;
+        }
+    &--black{
+        background-color: $color-btn;
+        color: #fff;
+        &:hover{
+            background: inherit;
+            outline: inherit;
+            color: inherit;
+            outline: 1px solid $color-btn;
+            outline-offset: -1px;
+        }
+    }
+}

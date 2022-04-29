@@ -1,0 +1,15 @@
+.l-main{
+    width:100%;
+    min-height: calc(100vh - 80px); 
+    padding-bottom: 80px; 
+    box-sizing: border-box;
+    @include sm(){
+        min-height: calc(100vh - 60px); 
+    }
+    @include md(){
+        min-height: calc(100vh - 60px); 
+    }
+    @include lg(){
+        min-height: calc(100vh - 60px); 
+    }
+}

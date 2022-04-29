@@ -1,0 +1,13 @@
+.c-badge{
+    border: 1px solid $color-text;
+    font-size: $font-size-xs;
+    margin-left: 5px;
+    padding: 0 5px;
+    display: inline-block;
+    @include sm(){
+        font-size: 10px;
+      }
+      @include md(){
+        font-size: 10px;
+      }
+}

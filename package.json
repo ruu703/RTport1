@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress  --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress  --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1048.0",
+    "css-loader": "^1.0.1",
+    "fs": "0.0.1-security",
+    "jquery-ui": "^1.13.0",
+    "migrate": "^1.7.0",
+    "stylus": "^0.56.0",
+    "stylus-loader": "^4.3.3",
+    "uuid": "^3.3.2",
+    "vee-validate": "^3.4.13",
+    "vue-burger-menu": "^2.0.5",
+    "vue-router": "^3.5.2",
+    "vue-script2": "^2.1.0",
+    "vuejs-paginate": "^2.1.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.5",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "^4.5.14",
+    "axios": "^0.19",
+    "bootstrap": "^4.1.0",
+    "cross-env": "^5.1",
+    "jquery": "^3.6.0",
+    "laravel-mix": "^4.0.7",
+    "lodash": "^4.17.13",
+    "popper.js": "^1.12",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "name": "match",
+  "description": "<p align=\"center\"><img src=\"https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg\" width=\"400\"></p>",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "",
+  "license": "ISC"
+}

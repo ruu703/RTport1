@@ -1,0 +1,19 @@
+.c-like{
+    margin-right: 30px;
+    height: 80px;
+    float: right;
+    overflow: hidden;
+    line-height: 80px;
+    @include sm(){
+            margin-right: $space-size-s;
+          }
+          @include md(){
+            margin-right: $space-size-s;
+          }
+    &__heart{
+    cursor: pointer;
+    font-size: 1.8em;
+    float: left;
+    color: #fa86d7;
+    }
+}

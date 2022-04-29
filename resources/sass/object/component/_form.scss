@@ -1,0 +1,52 @@
+.c-form{
+    margin-bottom: $space-size-s;
+    @include sm(){
+        margin-bottom: $space-size-xs;
+    }
+    @include md(){
+        margin-bottom: $space-size-xs;
+    }
+    &--input{
+        width: 100%;
+        padding: $space-size-xs 15px;
+        background-color: $color-bgcol;
+        border: 1px solid $color-border;
+        border-radius: 0.5rem;
+        // margin-bottom: $space-size-s;
+        font-size: $font-size-s;
+        height: 50px;
+    }
+    &--textarea{
+        @extend .c-form--input;
+        height: inherit;
+    }
+    &--radio{
+        margin-right: 10px;
+    }
+    &--radiotext{
+        display: inline-block;
+        padding-right: 30px;
+        margin-bottom: 10px;
+    }
+    &--check{
+        @extend .c-form--radio;
+    }
+    &--droparea{
+        position: relative;
+      }
+    &--file{
+        position:absolute;
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        z-index:1;
+        @include sm(){
+            width: 100px;
+            height: 100px;
+          }
+          @include md(){
+            width: 100px;
+            height: 100px;
+          }
+    }
+}

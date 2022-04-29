@@ -1,0 +1,12 @@
+.c-title{
+    margin: 40px 0;
+    @include sm(){
+        margin: 20px 0;
+      }
+    @include md(){
+        margin: 20px 0;
+    }
+    @include lg(){
+        margin: 30px 0;
+    }
+}

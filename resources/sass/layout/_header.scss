@@ -1,0 +1,16 @@
+/* ヘッダー */
+
+.l-header{
+    height: 80px;
+    width:100%;
+    overflow: hidden;
+    @include sm(){
+        height: 60px;
+    }
+    @include md(){
+        height: 60px;
+    }
+    @include lg(){
+        height: 60px;
+    }
+}

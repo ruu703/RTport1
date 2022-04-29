@@ -1,0 +1,105 @@
+.p-header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: solid 1px $color-border;
+    z-index: 2;
+    background: #fff;
+    @include sm(){
+        height: 60px;
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+    @include md(){
+        height: 60px;
+        left: 0;
+        position: fixed;
+        top: 0;
+    }
+    @include lg(){
+      height: 60px;
+      left: 0;
+      position: fixed;
+      top: 0;
+  }
+    &__logo{
+    position: relative;
+    top: 40px;
+    left: 60px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 78px;
+    @include sm(){
+        top: 30px;
+        left: 40px;
+        height: 55px;
+    }
+    @include md(){
+        top: 30px;
+        left: 40px;
+        height: 55px;
+    }
+    @include lg(){
+      top: 30px;
+      left: 40px;
+      height: 55px;
+  }
+ }
+ &__nav{
+  @include sm(){
+    z-index: 2;
+    display: inline-table;
+    position: absolute;
+    top: -100vh;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    transition: .5s;
+    &.active {
+      transition: .5s;
+      transform: translateY(100%);//画面幅いっぱいに移動させる
+      z-index: 2;
+        }
+      }
+    @include md(){
+        z-index: 2;
+        display: inline-table;
+        position: absolute;
+        top: -100vh;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        transition: .5s;
+        &.active {
+          transition: .5s;
+          transform: translateY(100%);//画面幅いっぱいに移動させる
+          z-index: 2;
+            }
+          }
+          @include lg(){
+            z-index: 2;
+            display: inline-table;
+            position: absolute;
+            top: -100vh;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            transition: .5s;
+            &.active {
+              transition: .5s;
+              transform: translateY(100%);//画面幅いっぱいに移動させる
+              z-index: 2;
+                }
+          }
+    }
+ }
