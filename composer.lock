@@ -362,7 +362,7 @@
                 "oci8",
                 "oracle",
                 "pdo",
-                "pgsql",
+                "pg",
                 "postgresql",
                 "queryobject",
                 "sasql",
